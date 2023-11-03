@@ -4,9 +4,17 @@ export default function Login() {
   // <-------- State--->
   // <---- const [variableName, SetFuntion] = useState("initialValue")---->
   const [email, setEmail] = useState("user@gmail.com");
+  const [password, setpassword] = useState("Admin");
 
   function Submit() {
     console.log("submitted");
+
+    let data = {
+      email,
+      password,
+    };
+
+    // fetch().then(()=>).then().catch();
   }
   return (
     <form className="col-6 offset-3 mt-5">
